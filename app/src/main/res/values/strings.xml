@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Meteorologia UPLA</string>
+    <string name="title_activity_main">Meteorologia UPLA</string>
+
+    <string-array name="brew_array">
+        <item>Estacion La Campana</item>
+        <item>Estacion El Yali</item>
+        <item>Estacion El Peral</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:background="@drawable/appwidget_dark_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/sync_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_sync_button"
+            android:text=""
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp" />
+        <Button
+            android:id="@+id/config"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/config"
+            android:text=""
+            android:layout_marginLeft="3dp" />
+        <Button
+            android:id="@+id/posicion"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/posicion"
+            android:text=""
+            android:layout_marginBottom="3dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#fcfcfc"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:onClick="onClick"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contentContainer"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Fecha:"
+            android:id="@+id/textofecha"
+            android:textColor="#FFFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00-00-00"
+            android:id="@+id/fecha"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/tInterior" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Hora:"
+            android:id="@+id/textohora"
+            android:textColor="#FFFF"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/fecha"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00:00"
+            android:id="@+id/hora"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/tExterior" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="T° Interior:"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textofecha"
+            android:layout_alignLeft="@+id/textofecha"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00 °C"
+            android:id="@+id/tInterior"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/fecha"
+            android:layout_toRightOf="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="T° Exterior:"
+            android:id="@+id/ttexterior"
+            android:textColor="#FFFF"
+            android:layout_alignTop="@+id/tExterior"
+            android:layout_alignLeft="@+id/textohora" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00 °C"
+            android:id="@+id/tExterior"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/hora"
+            android:layout_toRightOf="@+id/ttexterior" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Hum Interior:"
+            android:id="@+id/tHumInt"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00 %"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/hInterior"
+            android:layout_below="@+id/tInterior"
+            android:layout_toRightOf="@+id/tHumInt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Hum Exterior:"
+            android:id="@+id/tHumExt"
+            android:layout_below="@+id/ttexterior"
+            android:layout_alignLeft="@+id/ttexterior"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00 %"
+            android:id="@+id/hExterior"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tExterior"
+            android:layout_toRightOf="@+id/tHumExt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Presion:"
+            android:id="@+id/tPresion"
+            android:layout_below="@+id/tHumInt"
+            android:layout_alignLeft="@+id/tHumInt"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0000.00"
+            android:id="@+id/presion"
+            android:layout_alignTop="@+id/tPresion"
+            android:layout_alignLeft="@+id/tInterior" />
+    </RelativeLayout>
+
+</RelativeLayout>
