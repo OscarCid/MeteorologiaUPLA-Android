@@ -19,7 +19,6 @@ public class MyWidgetIntentReceiver extends BroadcastReceiver {
 			preferencia = GetDataFromDB.getDefaults("estacion",context);
 			estacion = GetDataFromDB.estacion(preferencia);
 			updateWidgetPictureAndButtonListener(context);
-
 		}
 	}
 
@@ -47,6 +46,8 @@ public class MyWidgetIntentReceiver extends BroadcastReceiver {
 		remoteViews.setOnClickPendingIntent(R.id.title, MyWidgetProvider.maps(context, estacion));
 		remoteViews.setOnClickPendingIntent(R.id.posicion, MyWidgetProvider.maps(context, estacion));
 		remoteViews.setOnClickPendingIntent(R.id.config, MyWidgetProvider.config(context));
+		remoteViews.setOnClickPendingIntent(R.id.button, MyWidgetProvider.botones(context));
+		remoteViews.setOnClickPendingIntent(R.id.button2, MyWidgetProvider.botones(context));
 		// re-registering for click listener
 		remoteViews.setOnClickPendingIntent(R.id.sync_button, MyWidgetProvider.buildButtonPendingIntent(context));
 

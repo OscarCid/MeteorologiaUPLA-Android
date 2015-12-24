@@ -25,6 +25,12 @@ public class MyWidgetProvider extends AppWidgetProvider {
 		remoteViews.setOnClickPendingIntent(R.id.sync_button,
 				buildButtonPendingIntent(context));
 
+		remoteViews.setOnClickPendingIntent(R.id.button,
+				botones(context));
+
+		remoteViews.setOnClickPendingIntent(R.id.button2,
+				botones(context));
+
 		remoteViews.setOnClickPendingIntent(R.id.config,
 				config(context));
 
@@ -38,6 +44,35 @@ public class MyWidgetProvider extends AppWidgetProvider {
 	public static PendingIntent buildButtonPendingIntent(Context context) {
 
 		// initiate widget update request
+		Intent intent = new Intent();
+		intent.setAction(WidgetUtils.WIDGET_UPDATE_ACTION);
+		return PendingIntent.getBroadcast(context, 0, intent,
+				PendingIntent.FLAG_UPDATE_CURRENT);
+	}
+
+	public static PendingIntent botones(Context context) {
+
+		String estacion = GetDataFromDB.getDefaults("estacion",context);
+
+		// initiate widget update request
+		if (estacion.equals("Estacion El Peral"))
+		{
+			GetDataFromDB.setDefaults("estacion","Estacion La Campana", context);
+		}
+		else
+		{
+			if (estacion.equals("Estacion La Campana"))
+			{
+				GetDataFromDB.setDefaults("estacion","Estacion El Yali", context);
+			}
+			else
+			{
+				if (estacion.equals("Estacion El Yali"))
+				{
+					GetDataFromDB.setDefaults("estacion","Estacion El Peral", context);
+				}
+			}
+		}
 		Intent intent = new Intent();
 		intent.setAction(WidgetUtils.WIDGET_UPDATE_ACTION);
 		return PendingIntent.getBroadcast(context, 0, intent,

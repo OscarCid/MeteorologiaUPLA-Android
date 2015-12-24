@@ -31,6 +31,8 @@ public final class R {
     public static final class id {
         public static final int Logo=0x7f080000;
         public static final int armada=0x7f08001e;
+        public static final int button=0x7f080026;
+        public static final int button2=0x7f080027;
         public static final int buttonContainer=0x7f080020;
         public static final int conaf=0x7f08001d;
         public static final int config=0x7f080022;
@@ -49,10 +51,10 @@ public final class R {
         public static final int static_spinner=0x7f080003;
         public static final int sync_button=0x7f080021;
         public static final int tExterior=0x7f08000c;
-        public static final int tHumExt=0x7f08002b;
-        public static final int tHumInt=0x7f08002a;
+        public static final int tHumExt=0x7f08002d;
+        public static final int tHumInt=0x7f08002c;
         public static final int tInterior=0x7f08000e;
-        public static final int tPresion=0x7f08002c;
+        public static final int tPresion=0x7f08002e;
         public static final int textView=0x7f080002;
         public static final int textView10=0x7f080008;
         public static final int textView11=0x7f08000f;
@@ -64,14 +66,14 @@ public final class R {
         public static final int textView2=0x7f08001c;
         public static final int textView4=0x7f080005;
         public static final int textView5=0x7f080006;
-        public static final int textView6=0x7f080028;
+        public static final int textView6=0x7f08002a;
         public static final int textView7=0x7f080007;
         public static final int textView8=0x7f08000b;
         public static final int textView9=0x7f08000d;
-        public static final int textofecha=0x7f080026;
-        public static final int textohora=0x7f080027;
+        public static final int textofecha=0x7f080028;
+        public static final int textohora=0x7f080029;
         public static final int title=0x7f080025;
-        public static final int ttexterior=0x7f080029;
+        public static final int ttexterior=0x7f08002b;
         public static final int uplafi=0x7f08001f;
         public static final int vBase=0x7f08001b;
     }
