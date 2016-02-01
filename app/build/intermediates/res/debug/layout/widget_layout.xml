@@ -70,7 +70,9 @@
             android:text="&lt;"
             android:id="@+id/button"
             android:layout_alignTop="@+id/title"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:textSize="10dp"
+            />
 
         <Button
             android:layout_width="30dp"
@@ -79,7 +81,7 @@
             android:id="@+id/button2"
             android:layout_alignTop="@+id/button"
             android:layout_alignParentRight="true"
-             />
+            android:textSize="10dp" />
 
     </RelativeLayout>
 
