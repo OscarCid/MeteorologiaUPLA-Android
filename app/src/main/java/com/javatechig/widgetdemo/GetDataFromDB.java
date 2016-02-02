@@ -28,7 +28,7 @@ public class GetDataFromDB {
 			HttpClient httpclient;
 			httpclient = new DefaultHttpClient();
 			System.out.print(preferencia);
-			httppost = new HttpPost("http://192.168.1.128/Clima/scr/php/widget/widget"+preferencia+".php"); // change this to your URL.....
+			httppost = new HttpPost("http://sistema.meteorologiaupla.cl/Clima/scr/php/widget/widget"+preferencia+".php"); // change this to your URL.....
 			ResponseHandler<String> responseHandler = new BasicResponseHandler();
 			final String response = httpclient.execute(httppost,
 					responseHandler);
