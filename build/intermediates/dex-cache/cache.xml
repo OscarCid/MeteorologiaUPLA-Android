@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Oscar\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jar="C:\Users\Orsen\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="C:\Users\Oscar\AndroidStudioProjects\WidgetDemo copia\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-20ab75687a7a8ab8cde3284b75d4f0df1c255a77.jar" />
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="C:\Users\Orsen\Proyectos\MeteorologiaUPLA-Android\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0_aae9c281abb32c052605693613f9eef1e6f242c6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Orsen\Proyectos\MeteorologiaUPLA-Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="C:\Users\Orsen\Proyectos\MeteorologiaUPLA-Android\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0_a61abf9a95bd5ef965659cb59b56b9600da75e22.jar" />
+    </item>
+    <item
+        jar="C:\Users\Orsen\Proyectos\MeteorologiaUPLA-Android\app\build\intermediates\exploded-aar\com.pushbots\pushbots-lib\2.0.13\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="635a77d3f219ad345f4b82dba86e4aabe4f35b94">
+        <dex dex="C:\Users\Orsen\Proyectos\MeteorologiaUPLA-Android\app\build\intermediates\pre-dexed\debug\com.pushbots-pushbots-lib-2.0.13_f18b83d0da9283dd0e478b646a886163e9771b15.jar" />
+    </item>
+    <item
+        jar="C:\Users\Orsen\Proyectos\MeteorologiaUPLA-Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="C:\Users\Orsen\Proyectos\MeteorologiaUPLA-Android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-21.0.0_a011c65bd428b0c551a9356f87e9054e96a9af22.jar" />
     </item>
 
 </items>

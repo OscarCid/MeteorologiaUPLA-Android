@@ -16,6 +16,8 @@ import android.widget.Spinner;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Toast;
 
+import com.pushbots.push.Pushbots;
+
 
 public class MainActivity extends Activity
 {
@@ -33,6 +35,7 @@ public class MainActivity extends Activity
 		preferencia = GetDataFromDB.getDefaults("estacion", contexto);
 		estacion = GetDataFromDB.estacion(preferencia);
 		setContentView(R.layout.activity_main);
+		Pushbots.sharedInstance().init(this);
 
 		clickimage();
 

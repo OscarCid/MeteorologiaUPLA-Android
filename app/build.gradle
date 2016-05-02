@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.javatechig.widgetdemo"
-        minSdkVersion 7
-        targetSdkVersion 7
+        minSdkVersion 8
+        targetSdkVersion 8
     }
 
     buildTypes {
@@ -19,5 +19,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.pushbots:pushbots-lib:2.0.13@aar'
+    compile 'com.android.support:support-v4:21.0.0'
 }
